@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/examples/">
+    <Project Path="examples/Examples/Examples.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/WasmInterop/WasmInterop.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/WasmInterop.Tests/WasmInterop.Tests.csproj" />
+  </Folder>
+</Solution>
