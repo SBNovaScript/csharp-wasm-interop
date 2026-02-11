@@ -40,7 +40,7 @@ Bidirectional interop between C# and WebAssembly with no bridge languages. C# ho
 ## Prerequisites
 
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download) or later
-- No other tools required — WAT modules are loaded directly at runtime by Wasmtime
+- No other tools are required. WAT modules are loaded directly at runtime by Wasmtime.
 
 ## Quick Start
 
@@ -86,14 +86,12 @@ csharp-wasm/
 
 ### The Only Dependency
 
-This project uses a single NuGet package: [`Wasmtime`](https://www.nuget.org/packages/Wasmtime) — the official .NET embedding of the [Wasmtime](https://wasmtime.dev/) runtime from the Bytecode Alliance. It provides:
+This project uses a single NuGet package: [`Wasmtime`](https://www.nuget.org/packages/Wasmtime), which is the official .NET embedding of the [Wasmtime](https://wasmtime.dev/) runtime from the Bytecode Alliance. It provides:
 
 - A JIT compiler for WASM (Cranelift)
 - The ability to load `.wat` (text) or `.wasm` (binary) modules
 - Type-safe function imports and exports
 - Shared linear memory access
-
-No JavaScript, no Emscripten, no wasm-bindgen, no bridge languages.
 
 ### C# Calling WASM
 
